@@ -10,8 +10,9 @@ Plug 'easymotion/vim-easymotion'	"plugin para mapear caracteres o palabras rapid
 Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
 Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
+Plug 'neovim/nvim-lspconfig'		"servidores de lenguajes
+Plug 'nvim-lua/completion-nvim'		"autocompletado de lenguajes
+Plug 'preservim/nerdcommenter'		"comentar rapido codigo
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -75,6 +76,7 @@ nmap <leader>q :q<CR>
 nmap <leader>s <Plug>(easymotion-s2)
 
 "el llamado al servidor de lsp de python
+"con lo que esta dentro de la llave llamo al autocompletado
 lua require'lspconfig'.pyright.setup{on_attach=require'completion'.on_attach}
 
 "mapeo de teclas para el lsp
