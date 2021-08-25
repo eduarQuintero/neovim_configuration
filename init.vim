@@ -13,6 +13,7 @@ Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neovim/nvim-lspconfig'		"servidores de lenguajes
 Plug 'nvim-lua/completion-nvim'		"autocompletado de lenguajes
 Plug 'preservim/nerdcommenter'		"comentar rapido codigo
+Plug 'ryanoasis/vim-devicons'		"iconos para los archivos pero requiere nerdfonts
 
 call plug#end() 			"cerramos el llamado de los plugins
 
